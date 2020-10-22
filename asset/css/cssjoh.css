@@ -1,0 +1,172 @@
+/* PHOTO N&B */
+
+
+
+.image {
+  width: 1500px;
+  height: 700px;
+}
+
+
+/* Barre des cookie */
+.body {
+    background-color: black;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 90% 10%;
+ background-color: #FFDE59;
+ height: 50px;
+}
+
+ .cookies {
+   
+    color: black;
+    font-size: 20px;
+}
+
+.button {
+    background-color:#353535 ;
+    color: white;
+    height: 20px;
+    justify-content: right;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* 3 BLOCS IMAGES */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-gap: 3px;
+    height: 200px;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    width: auto;
+    height: 200px;
+    margin-top: 25px;
+}
+
+/* Défilement photos */
+
+.slider {
+    width: calc(500px 10) ;
+    overflow: hidden;
+    margin: 150px auto;
+    height: 300px;
+    
+}
+
+.slides {
+    width: auto;
+    animation: glisse 40s infinite;
+
+}
+
+.imgSlides {
+    width: 100%;
+    
+}
+    
+
+.slide {
+    float: left; }
+
+
+
+
+    @keyframes glisse {
+        0% {
+            transform: translateX(0);
+        }
+        10% {
+            transform: translateX(500px);
+        }
+        20%{
+            transform: translateX(1000px);
+        }
+        30%{
+            transform: translateX(1500px);
+        }
+        40% {
+            transform: translateX(2000px);
+        }
+        50% {
+            transform: translateX(2500px);
+        }
+        60% {
+            transform: translateX(3000px);
+        }
+        70% {
+            transform: translateX(3500px)
+        }
+        80% {
+            transform: translateX(4000px);
+        }
+ }
+
+ /* FOOTER */
+
+ .footer {
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     grid-template-areas: "logo" "contact" "mentions" "newsletter";
+     border: honeydew 1px solid;
+     height: 400px;
+     background-color:#353535 ;
+     
+ }
+
+ .logo {
+     grid-area: "logo";
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     }
+
+.contact {
+    grid-area: "contact";
+    display: grid;
+    color: honeydew;
+    text-align: center;
+}
+
+.mentions {
+    grid-area: "mentions";
+    display: grid;
+    color: honeydew;
+    text-align: center;
+}
+
+.newsletter {
+    grid-area: "newsletter";
+    display: grid;
+    color: honeydew;
+    text-align: center;
+}
+
+.yellowText {
+    color:#FFDE59 ;
+    font-weight: bold;
+}
+
+.form {
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
