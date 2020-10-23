@@ -40,3 +40,17 @@ a {
     color: white;
 
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:680px)
+{
+    a, .form{
+        display: none;
+
+    }
+
+    .nav {
+        display: block;
+    }
+}
