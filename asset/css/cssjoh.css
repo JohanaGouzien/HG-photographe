@@ -43,7 +43,12 @@ grid-template-columns: 90% 10%;
     grid-gap: 3px;
     height: 200px;
     width: 100%;
+   
+    
+
 }
+
+
 
 article {
     display: flex;
@@ -54,7 +59,29 @@ img {
     width: auto;
     height: 200px;
     margin-top: 25px;
+    
+    
+
 }
+
+/*TEXTE des images*/
+
+.title {
+    position: absolute;
+    font-weight: bold;
+    z-index: 1;
+    color: honeydew;
+    height: 100%;
+    width: 100%;
+    
+}
+ .locationImage {
+    
+        position: relative;
+        overflow: hidden;
+      }
+ 
+
 
 /* Défilement photos */
 
@@ -68,7 +95,7 @@ img {
 
 .slides {
     width: auto;
-    animation: glisse 40s infinite;
+    animation: glisse 60s infinite;
 
 }
 
@@ -121,8 +148,9 @@ img {
      grid-template-columns: auto auto auto auto;
      grid-template-areas: "logo" "contact" "mentions" "newsletter";
      border: honeydew 1px solid;
-     height: 400px;
+     height: 300px;
      background-color:#353535 ;
+     
      
  }
 
@@ -131,6 +159,9 @@ img {
      display: grid;
      align-items: center;
      justify-content: center;
+     grid-template-rows: auto;
+     padding-bottom: 70px;
+     padding-left: 20px;
      }
 
 .contact {
@@ -138,6 +169,9 @@ img {
     display: grid;
     color: honeydew;
     text-align: center;
+    grid-template-rows: auto auto auto;
+    padding: 100px;
+    
 }
 
 .mentions {
@@ -145,6 +179,9 @@ img {
     display: grid;
     color: honeydew;
     text-align: center;
+    grid-template-rows: 40px 20px 20px 20px;
+    padding: 100px;
+    
 }
 
 .newsletter {
@@ -152,11 +189,17 @@ img {
     display: grid;
     color: honeydew;
     text-align: center;
+    grid-template-rows: 40px 20px 20px;
+    padding: 100px;
 }
 
 .yellowText {
     color:#FFDE59 ;
     font-weight: bold;
+}
+
+.yellowFont {
+    background-color: #FFDE59;
 }
 
 .form {
